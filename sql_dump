@@ -1,0 +1,18 @@
+-- Table: rep
+
+-- DROP TABLE rep;
+
+CREATE TABLE rep
+(
+  "ID" serial NOT NULL,
+  "StartDate" date,
+  "EndDate" date,
+  "Performer" character varying,
+  "Activity" character varying
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE rep
+  OWNER TO postgres;
+
